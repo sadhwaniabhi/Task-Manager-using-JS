@@ -7,23 +7,56 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
-body{
+main{
     background-color: #0D479A;
-    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
+.heading{
+    text-align: center;
+    color: #ffffff;
+    margin: 10px auto 40px auto;
+}
+
+.heading .title{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.heading .subtitle{
+    font-size: 20px;
+    font-weight: 300;
+}
 .search{
-    max-width: 350px;
-    margin: 10px auto;
+    max-width: 450px;
+    margin: 20px auto;
     background-color: white;
-    padding: 20px;
+    padding: 30px 25px;
     border-radius: 5px;
 }
 
+.search form{
+    display: flex;
+    gap: 10px;
+}
+
 .search input{
-    padding: 10px;
+    flex-grow: 1;
+    padding: 15px 10px;
+    border-top: 2px solid #212121;
+    border-left: 2px solid #212121 ;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.search form i{
+    align-self: center;
+    font-size: 24px;
 }
 
 .hidden{
@@ -31,17 +64,77 @@ body{
 }
 
 .add-task{
-    max-width: 350px;
-    margin: 10px auto;
+    max-width: 450px;
+    margin: 20px auto;
     background-color: white;
-    padding: 20px;
+    padding: 30px 25px;
     border-radius: 5px;
 }
 
+.add-task .tasks{
+    margin-bottom: 30px;
+}
+
+.add-task .tasks li{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.add-task .tasks li span{
+    flex-grow: 1;
+    background-color: #F2F2F2;
+    padding: 10px;
+
+}
+
+.add-task .tasks li i{
+    background-color: #D82148;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.add-task .add-task-form{
+    display: flex;
+    gap: 10px;
+}
+
+.add-task .add-task-form input[type="text"]{
+    flex-grow: 1;
+    padding: 10px;
+    border-top: 2px solid #212121;
+    border-left: 2px solid #212121 ;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.add-task .add-task-form input[type="submit"]{
+    background-color: #65C18C;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+
 .message{
-    max-width: 350px;
-    margin: 10px auto;
+    max-width: 450px;
+    margin: 20px auto;
     background-color: white;
-    padding: 20px;
+    padding: 20px 25px;
     border-radius: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.message span{
+    flex-grow: 1;
+    align-self: center;
+}
+
+.message button{
+    background-color: #11468F;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
 }
